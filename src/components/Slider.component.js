@@ -12,7 +12,7 @@ export class Slider extends Component {
     this.track = this.$el.querySelector('#sliderTrack')
     this.prev = this.$el.querySelector('#arrow_prev')
     this.next = this.$el.querySelector('#arrow_next')
-    
+
     update.call(this)
     window.onresize = ()=> {
       update.call(this)
@@ -21,7 +21,6 @@ export class Slider extends Component {
     this.prev.addEventListener('click', prevHandler.bind(this))
     this.next.addEventListener('click', nextHandler.bind(this))
   }
-
 }
 function prevHandler() {
   console.log(123)
